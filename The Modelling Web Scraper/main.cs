@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace The_Modelling_Web_Scraper
 {
-    class Program
+    class main
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("time to do this");
         }
     }
 }
