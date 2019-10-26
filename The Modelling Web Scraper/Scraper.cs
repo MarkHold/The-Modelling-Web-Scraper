@@ -1,13 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace The_Modelling_Web_Scraper
 {
-    class Scraper
+    public class Scraper
     {
-        // hello
+        public string init(string url)
+        {
+           string context = null; 
+           
+            using(WebClient client = new WebClient())
+            {
+                context = client.DownloadString(url);
+                Console.WriteLine(context);
+                Console.ReadKey();
+            }
+
+           return context;
+        }
+
     }
 }

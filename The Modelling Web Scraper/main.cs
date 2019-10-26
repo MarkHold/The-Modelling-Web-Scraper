@@ -10,7 +10,10 @@ namespace The_Modelling_Web_Scraper
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("time to do this");
+            Scraper scraper = new Scraper();
+            
+            scraper.init("https://www.alphavantage.co/query?function=SMA&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo");
+            
         }
     }
 }
